@@ -1,0 +1,25 @@
+CREATE OR REPLACE FUNCTION "TRUST_DEV_DWH"."F_JSON_GET_SEC_STRING" (JSON_STR IN clob, PROPERTY_NAME IN varchar2)
+  return VARCHAR2 AS
+  /*
+  Author:Rosicky
+  Function: get Json value from any level
+  Note: just for one element appear only once
+  */
+  s_string  varchar2(100);
+  s_num  varchar2(100);
+begin
+  s_string := DBMS_LOB.substr(REGEXP_SUBSTR(JSON_STR,'[^"]+',instr(JSON_STR,PROPERTY_NAME)+length(PROPERTY_NAME)+3,1));
+  s_num :=DBMS_LOB.substr(REGEXP_SUBSTR(JSON_STR,'[^,|}]+',instr(JSON_STR,PROPERTY_NAME)+length(PROPERTY_NAME)+2,1));
+  if DBMS_LOB.substr(REGEXP_SUBSTR(JSON_STR,'[^,|}]+',instr(JSON_STR,PROPERTY_NAME)+length(PROPERTY_NAME)+2,1)) ='null' or instr(JSON_STR,PROPERTY_NAME)=0 then
+    return null;
+  elsif substr(DBMS_LOB.substr(REGEXP_SUBSTR(JSON_STR,'[^,|}]+',instr(JSON_STR,PROPERTY_NAME)+length(PROPERTY_NAME)+2,1)),1,1)='"' then
+    return s_string;
+  else
+    return s_num;
+  end if;
+end;
+
+
+
+
+/
