@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-28T09:30:06.115Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="Vkw8W91iXryVXBXyAXzY" version="15.3.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-09-28T09:31:35.758Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="9_5gX1BsMKDH8mzOz9BZ" version="15.3.4" type="github" pages="3">
   <diagram id="_9MuDa6dQbHpClCzVjOc" name="市场活动">
     <mxGraphModel dx="2062" dy="1122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -188,6 +188,14 @@
             <mxPoint x="370" y="100" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="9Q67jeHDe8rZA6JWyKhK-13" style="edgeStyle=none;shape=flexArrow;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="sqPwcrKXTtSz0kW3UQBY-1" source="sNOLYmkBqX2WknD6R8bB-0" target="sNOLYmkBqX2WknD6R8bB-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="65" />
+              <mxPoint x="570" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="sNOLYmkBqX2WknD6R8bB-0" value="客户管理" style="swimlane;fontStyle=3;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="sqPwcrKXTtSz0kW3UQBY-1" vertex="1">
           <mxGeometry x="340" y="40" width="100" height="50" as="geometry" />
         </mxCell>
@@ -264,13 +272,11 @@
             <mxPoint x="120" y="65" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9Q67jeHDe8rZA6JWyKhK-7" style="edgeStyle=none;shape=arrow;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="sqPwcrKXTtSz0kW3UQBY-1" source="EABFm1NV3lsZneSB0-LK-0">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="520" y="195" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="9Q67jeHDe8rZA6JWyKhK-12" style="edgeStyle=none;shape=flexArrow;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="sqPwcrKXTtSz0kW3UQBY-1" source="EABFm1NV3lsZneSB0-LK-0" target="sNOLYmkBqX2WknD6R8bB-5">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="EABFm1NV3lsZneSB0-LK-0" value="连锁分店" style="swimlane;fontStyle=3;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="sqPwcrKXTtSz0kW3UQBY-1" vertex="1">
-          <mxGeometry x="20" y="160" width="100" height="50" as="geometry" />
+          <mxGeometry x="20" y="170" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="EABFm1NV3lsZneSB0-LK-1" value="&lt;span style=&quot;font-weight: 700&quot;&gt;已有销售连锁分店&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="EABFm1NV3lsZneSB0-LK-0" vertex="1">
           <mxGeometry x="-5" y="30" width="110" height="20" as="geometry" />
